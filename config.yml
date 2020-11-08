@@ -1,0 +1,16 @@
+title: 'https://github.com/MicrosoftLearning/AZ-500-Azure-Security.git'
+description: 'https://github.com/MicrosoftLearning/AZ-500-Azure-Security.git'
+template:
+  repo: 'https:github.commicrosoftlearningaz-500-azure-security.git-template'
+  name: 'https:github.commicrosoftlearningaz-500-azure-security.git'
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
